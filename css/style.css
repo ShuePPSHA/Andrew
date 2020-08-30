@@ -8,38 +8,36 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
-.container{
-    max-width: 1920px;
-    padding-right: 200px;
-    padding-left: 200px;    
-}
-.clearfix:after {
-    content: '';
-    display: table; 
+.header {
+    margin: 0 auto;
     width: 100%;
-    clear: both;
-}
-.heading{
-    height: 148px;
+    padding-right: 200px;
+    padding-left: 200px; 
+    display: flex;
+    justify-content: space-between; 
 }
 .header__logo {
-    height: 99px;
+    background: url(../img/logo.png) no-repeat center / cover;
+    margin: 29px 0px 20px;
     width: 189px;
-    float: left;
-}
-.header__logo img{
     height: 99px;
-    width: 189px;
-    float: left;
-    margin: 29px 0px 22px;
 }
-.communication {
-    float: right;
+.header__menu {
     display: flex;
-    padding: 31px 0px 33px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1135px;
+    align-items: flex-end;
+    flex-wrap: nowrap;
 }
-.button{
+.header__communication {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 31px;
+}
+.header__communication-button {
     color: #0F84F7;
     border-radius: 2px;
     transition: all 0.3s cubic-bezier(0.61, 1, 0.88, 1);
@@ -51,47 +49,47 @@ body {
     text-align: center;
     font-weight: 800;
 }
-.button:hover {
-  background:#0F84F7;
-  color:#3aeba1; 
-  border-radius: 7px;
-}
-.button:active {
- background:#3aeba1;
- color: #0F84F7;
- border-radius: 13px;
-}
-.phone{
-    padding-top: 7px;
-}
-.phone a {
- font-family: Montserrat;
- font-weight: 800;
- font-size: 20px;
- line-height: 24px;
- text-decoration: none;
- color: #2B3773;
- padding: 0px 60px;
-}
-.social{
-    padding-top: 7px;
-}
-.social a:nth-child(2){
-    padding: 0px 20px;
-}
-.menu {
-    float: right;
-    display: flex;
-    justify-content: space-between;
-}
-.menu__item a{
-    padding-left: 66px; /* 66px po maketu */
-    text-decoration: none;  
+.header__communication-button:hover {
+    background:#0F84F7;
+    color:#3aeba1; 
+    border-radius: 7px;
+  }
+.header__communication-button:active {
+   background:#3aeba1;
+   color: #0F84F7;
+   border-radius: 13px;
+  }
+.header__communication-phone {
     font-family: Montserrat;
     font-weight: 800;
-    font-size: 20px; /* 20px po maketu */
+    font-size: 20px;
+    text-decoration: none;
     color: #2B3773;
+    margin-left: 60px;
 }
+.header__communication-social {
+    margin-left: 60px;
+}
+.header__communication-social a:nth-child(2) {
+    margin: 0px 20px;
+}
+.header__navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
+}
+.header__navigation-item{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 20px;
+    color: #2B3773;
+    margin-left: 66px;
+    width: 100%;
+    flex-wrap: nowrap;
+} 
 .imgSection {
     background: url(../img/Rectangle\ 24.png) no-repeat center top / cover;
     height:100vh;
