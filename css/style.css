@@ -20,7 +20,7 @@ body {
     background: url(../img/logo.png) no-repeat center / cover;
     margin: 29px 0px 20px;
     min-width: 189px;
-    min-height: 99px;
+    height: 99px;
 }
 .header__menu {
     display: flex;
