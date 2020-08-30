@@ -79,6 +79,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 33px;
+    margin-bottom: 31px;
 }
 .header__navigation-item{
     text-decoration: none;
