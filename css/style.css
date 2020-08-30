@@ -19,8 +19,8 @@ body {
 .header__logo {
     background: url(../img/logo.png) no-repeat center / cover;
     margin: 29px 0px 20px;
-    width: 189px;
-    height: 99px;
+    min-width: 189px;
+    min-height: 99px;
 }
 .header__menu {
     display: flex;
